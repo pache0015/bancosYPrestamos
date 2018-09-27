@@ -21,7 +21,7 @@ public class Cliente {
 		this.sueldoNetAnual = sueldo;
 	}
 	
-	public void solicitarCredito(Banco banco, Float monto) {
-		banco.solicitudDeCredito(monto);
+	public void solicitarCredito(Banco banco, Credito credito) {
+		banco.solicitudDeCredito(this, credito);
 	}
 }
