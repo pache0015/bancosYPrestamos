@@ -11,7 +11,7 @@ public abstract class Credito {
 	}
 	
 	public abstract Float cuotaMensual();
-	
+	public abstract Boolean esAprobable(Cliente cliente);
 	
 	
 }

@@ -6,4 +6,11 @@ public class CreditoPersonal extends Credito {
 		super(monto, cuotas);
 	}
 
+	@Override
+	public Float cuotaMensual() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 }

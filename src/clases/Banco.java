@@ -12,7 +12,11 @@ public class Banco {
 		this.evaluarCredito(cliente, credito);
 	}
 	
-	private void evaluarCredito(Cliente cliente, Credito credito) {
+	private Boolean evaluarCredito(Cliente cliente, Credito credito) {
+		return credito.evaluar(cliente);
+	}
+	
+	private void otorgarCredito() {
 		
 	}
 	

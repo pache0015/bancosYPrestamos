@@ -18,10 +18,8 @@ public class Cliente {
 		this.sueldoNetMensual = sueldo;
 	}
 	public void setSueldoNetAnual(Float sueldo) {
-		this.sueldoNetAnual = sueldo;
+		this.sueldoNetAnual = sueldoNetMensual * 13;
 	}
 	
-	public void solicitarCredito(Banco banco, Credito credito) {
-		banco.solicitudDeCredito(this, credito);
-	}
+	// TODO revisar toda la solucion
 }
