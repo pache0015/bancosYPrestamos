@@ -21,5 +21,5 @@ public class Cliente {
 		this.sueldoNetAnual = sueldoNetMensual * 13;
 	}
 	
-	// TODO revisar toda la solucion
+
 }
