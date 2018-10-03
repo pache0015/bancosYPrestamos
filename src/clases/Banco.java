@@ -26,6 +26,7 @@ public class Banco {
 	public Float desembolsar() {
 		ArrayList<SolicitudCredito> lista = new ArrayList<SolicitudCredito>();
 		lista = (ArrayList<SolicitudCredito>) solicitudes.stream().filter( solicitudes -> SolicitudCredito.esAceptable()).collect(Collectors.toList());
+		
 		Float suma = new Float(0);
 		
 		for (SolicitudCredito solicitud : solicitudes) {
