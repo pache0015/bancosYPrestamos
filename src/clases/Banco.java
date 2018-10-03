@@ -2,6 +2,7 @@ package clases;
 
 import java.awt.List;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class Banco {
 
@@ -23,10 +24,14 @@ public class Banco {
 	}
 	
 	public Float desembolsar() {
+		ArrayList<SolicitudCredito> lista = new ArrayList<SolicitudCredito>();
+		lista = (ArrayList<SolicitudCredito>) solicitudes.stream().filter( solicitudes -> SolicitudCredito.esAceptable()).collect(Collectors.toList());
+		Float suma = new Float(0);
 		
-		//filter( solicitudes -> SolicitudCredito.esAceptable());
-		
-		return null;
+		for (SolicitudCredito solicitud : solicitudes) {
+			suma += solicitud.getMonto();
+		}
+		return suma;
 	}
 	
 	

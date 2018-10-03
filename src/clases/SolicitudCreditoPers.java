@@ -26,5 +26,10 @@ public class SolicitudCreditoPers extends SolicitudCredCliente {
 		return null;
 	}
 
+	@Override
+	public Float getMonto() {
+		return monto;
+	}
+
 	
 }

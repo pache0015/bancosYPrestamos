@@ -25,4 +25,9 @@ public class SolicitudCreditoHipo extends SolicitudCredCliente{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public Float getMonto() {
+		return monto;
+	}
 }
