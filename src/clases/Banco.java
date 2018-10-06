@@ -19,8 +19,8 @@ public class Banco {
 		this.evaluarCredito(solicitud);
 	}
 	
-	private Boolean evaluarCredito(Cliente cliente, SolicitudCredito solicitud) {
-		return solicitud.esAceptable(cliente);
+	private Boolean evaluarCredito(SolicitudCredito solicitud) {
+		return solicitud.esAceptable();
 	}
 	
 	public Float desembolsar() {
