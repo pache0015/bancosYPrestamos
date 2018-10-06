@@ -29,10 +29,14 @@ public class Banco {
 		
 		Float suma = new Float(0);
 		
-		for (SolicitudCredito solicitud : solicitudes) {
-			suma += solicitud.getMonto();
-		}
-		return suma;
+		//for (SolicitudCredito solicitud : solicitudes) {
+			//suma += solicitud.getMonto();
+		//}
+		// ESTONES REEMPLAZADO POR EL LAMNDA
+		
+		return  (Float) lista.stream().MapToDouble(solicitud -> solicitud.getMonto()).sum();
+		
+		// TODO REVISAR!!!
 	}
 	
 	
