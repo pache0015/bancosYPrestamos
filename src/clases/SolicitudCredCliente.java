@@ -9,8 +9,8 @@ public abstract class SolicitudCredCliente implements SolicitudCredito {
 
 	
 	public abstract Float cuotaMensual();
-	public abstract Boolean esAceptable(Cliente cliente);
-	protected abstract Boolean sueldoApto(Cliente cliente);
+	public abstract Boolean esAceptable();
+	protected abstract Boolean sueldoApto();
 	
 	public Float getMondo() {
 		return monto;

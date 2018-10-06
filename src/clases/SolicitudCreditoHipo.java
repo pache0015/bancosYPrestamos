@@ -15,13 +15,13 @@ public class SolicitudCreditoHipo extends SolicitudCredCliente{
 	}
 
 	@Override
-	public Boolean esAceptable(Cliente cliente) {
+	public Boolean esAceptable() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	protected Boolean sueldoApto(Cliente cliente) {
+	protected Boolean sueldoApto() {
 		// TODO Auto-generated method stub
 		return null;
 	}

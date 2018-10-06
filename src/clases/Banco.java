@@ -15,8 +15,8 @@ public class Banco {
 		
 	}
 	
-	public void registrarSolicitudDeCredito(Cliente cliente,SolicitudCredito solicitud) {
-		this.evaluarCredito(cliente, solicitud);
+	public void registrarSolicitudDeCredito(SolicitudCredito solicitud) {
+		this.evaluarCredito(solicitud);
 	}
 	
 	private Boolean evaluarCredito(Cliente cliente, SolicitudCredito solicitud) {

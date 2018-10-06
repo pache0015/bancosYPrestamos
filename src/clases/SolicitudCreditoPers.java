@@ -15,13 +15,7 @@ public class SolicitudCreditoPers extends SolicitudCredCliente {
 	}
 
 	@Override
-	public Boolean esAceptable(Cliente cliente) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	protected Boolean sueldoApto(Cliente cliente) {
+	protected Boolean sueldoApto() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -29,6 +23,12 @@ public class SolicitudCreditoPers extends SolicitudCredCliente {
 	@Override
 	public Float getMonto() {
 		return monto;
+	}
+
+	@Override
+	public Boolean esAceptable() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

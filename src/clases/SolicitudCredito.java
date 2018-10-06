@@ -1,7 +1,8 @@
 package clases;
 
 public interface SolicitudCredito {
+	
 
-	public Boolean esAceptable(Cliente cliente);
+	public Boolean esAceptable();
 	public Float getMonto();
 }
